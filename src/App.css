@@ -1,38 +1,110 @@
-.App {
+@font-face {
+  font-family: "FinalFrontier";
+  src: local("FinalFrontier"), url(./fonts/FinalFrontier.ttf) format("truetype");
+}
+
+body {
+  background: linear-gradient(45deg, #345992, #c3cfe2);
+  background-image: url(./image/Borg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  color: rgb(230, 244, 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "FinalFrontier", sans-serif;
+  min-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title {
+  font-size: 4.5rem;
+  margin-bottom: 110px;
+  margin-top: -100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: silver;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
+.timer-container {
+  margin: -70px 20px 20px;
+}
+
+.timer-container h2 {
+  margin: 0;
+}
+
+.actions-wrapper span {
+  font-size: 40px;
+  margin: 0 10px;
+  width: 40px;
+}
+
+.clock-container {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 100px;
+  margin-top: 20px;
+}
+
+.clock-container span {
+  font-size: 70px;
+}
+
+.clock-container h1 {
+  margin: 0;
+}
+
+.footer {
+  color: #b6b4b3;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  margin-right: 20px;
+}
+.footer a {
+  display: inline;
+}
+
+.twitter {
   color: #61dafb;
+  font-size: 0.9em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.github {
+  color: lightgrey;
+  font-size: 0.9em;
+}
+
+.footer a:hover {
+  color: rgb(217, 255, 0);
+}
+
+.footer,
+.footer a {
+  font-size: 1.4em;
+}
+
+.footer h1 {
+  font-size: 1.2em;
 }

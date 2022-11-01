@@ -1,7 +1,10 @@
 {
   "name": "pomodoro",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "A 25 + 5 Pomodoro timer",
   "private": true,
+  "author": "CryptOzauruS",
+  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -13,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
